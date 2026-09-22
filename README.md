@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Much More Compelling -->
+    <!-- Hero Section -->
     <header class="relative overflow-hidden">
         <div class="absolute inset-0 gradient-bg opacity-5"></div>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
@@ -81,7 +81,7 @@
         </div>
     </header>
 
-    <!-- Before & After Section - Visual Comparison -->
+    <!-- Before & After Section -->
     <section id="before-after" class="py-20 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -182,14 +182,14 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="https://dacolescocoai.com/sample-packet.pdf" target="_blank" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
+                <a href="sample-packet.md" target="_blank" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
                     📄 View Full Sample Packet
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- How It Works - Visual Steps -->
+    <!-- How It Works -->
     <section id="how-it-works" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
