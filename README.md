@@ -30,7 +30,7 @@
                     <a href="#how-it-works" class="text-slate-600 hover:text-blue-700 font-medium transition">How It Works</a>
                     <a href="#before-after" class="text-slate-600 hover:text-blue-700 font-medium transition">See the Difference</a>
                     <a href="#nonprofits" class="text-slate-600 hover:text-blue-700 font-medium transition">For Nonprofits</a>
-                    <a href="https://calendly.com/your-username/15min" target="_blank" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
+                    <a href="https://calendly.com/dacolesco/15min" target="_blank" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition">
                         Schedule a Call
                     </a>
                 </div>
@@ -314,7 +314,7 @@
                     <p class="text-slate-300 mb-6">Schedule a 15-minute discovery call to discuss whether CaseReady is a fit for your organization.</p>
                     
                     <!-- Calendly Integration -->
-                    <a href="https://calendly.com/your-username/15min" target="_blank" class="block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-6 rounded-xl hover:shadow-2xl transition transform hover:scale-105 mb-4">
+                    <a href="https://calendly.com/dacolesco/15min" target="_blank" class="block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-6 rounded-xl hover:shadow-2xl transition transform hover:scale-105 mb-4">
                         📅 Schedule a Discovery Call
                     </a>
                     
@@ -363,3 +363,5 @@
 
 </body>
 </html>
+
+
