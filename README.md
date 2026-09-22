@@ -240,6 +240,13 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- NEW BUTTON: View Detailed Partner Workflow -->
+            <div class="text-center mt-12">
+                <a href="partner-workflow.md" target="_blank" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
+                    📖 See How It Works in Your Organization
+                </a>
+            </div>
         </div>
     </section>
 
@@ -316,6 +323,11 @@
                     <!-- Calendly Integration -->
                     <a href="https://calendly.com/dacolesco" target="_blank" class="block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-6 rounded-xl hover:shadow-2xl transition transform hover:scale-105 mb-4">
                         📅 Schedule a Discovery Call
+                    </a>
+                    
+                    <!-- NEW BUTTON: View Partner Workflow -->
+                    <a href="partner-workflow.md" target="_blank" class="block w-full text-center bg-slate-700 text-white font-semibold py-3 px-4 rounded-lg hover:bg-slate-600 transition mb-4">
+                        📖 See How It Works in Practice
                     </a>
                     
                     <p class="text-slate-400 text-sm text-center mb-4">Or email us directly:</p>
