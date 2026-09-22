@@ -1,121 +1,90 @@
-# CaseReady Sample Packet
-**Prepared for Professional Intake Review**  
-*This is a fictional demonstration case*
-
----
-
-## CLIENT SUMMARY
-
-**Client Name:** Maria Garcia  
-**Case Type:** Eviction Defense / Housing Stability  
+# CLIENT INTAKE SUMMARY
+**Prepared by:** CaseReady (Demonstration Packet)  
 **Date Prepared:** September 22, 2026  
-**Location:** Pittsburgh, Allegheny County, PA
-
-### Current Situation
-- **Housing Status:** Received 10-Day Notice to Vacate
-- **Property Address:** 5842 Walnut Street, Pittsburgh, PA 15232
-- **Monthly Rent:** $1,150
-- **Household:** Single parent with 2 minor children (ages 8 and 11)
-- **Employment Status:** Currently on unpaid medical leave
-
-### Timeline of Events
-
-| Date | Event |
-|------|-------|
-| **June 2024** | Signed 12-month lease for 2-bedroom apartment in Shadyside |
-| **December 2025** | Diagnosed with serious medical condition requiring surgery |
-| **January 2026** | Began unpaid medical leave; exhausted sick days |
-| **February 1, 2026** | Could not pay full rent; paid $500 of $1,150 |
-| **February 15, 2026** | Applied for Pennsylvania Rental Assistance Program |
-| **March 1, 2026** | Received 10-Day Notice to Vacate for non-payment |
-| **March 3, 2026** | Attempted to contact landlord to discuss payment plan (left voicemail, no response) |
-| **March 5, 2026** | Received approval letter for rental assistance (payment pending to landlord) |
-
-### Key Facts
-
-✅ **Strengths:**
-- No prior evictions or lease violations
-- 18 months of on-time rent payments before medical emergency
-- Rental assistance application approved (waiting for disbursement)
-- Stable employment prior to medical leave (employed 3+ years)
-- Children enrolled in local school (Pittsburgh Public Schools)
-
-⚠️ **Challenges:**
-- Landlord not responding to communication attempts
-- Rental assistance payment delayed (landlord has not received funds yet)
-- Medical leave duration uncertain (doctor estimates 2-3 more months)
-- Limited savings ($300 remaining)
-- No written record of landlord communication (only phone calls)
+**Case Reference:** Housing Stability / Eviction Defense  
 
 ---
 
-## DOCUMENT CHECKLIST
-
-### Documents Client Has Gathered
-
-| Document | Status | Notes |
-|----------|--------|-------|
-| **Lease Agreement** | ✅ Available | Signed June 15, 2024; expires May 31, 2027 |
-| **10-Day Notice to Vacate** | ✅ Available | Dated March 1, 2026; cites non-payment of $650 |
-| **Bank Statements** | ✅ Available | January-February 2026 showing partial payment |
-| **Partial Rent Payment Receipt** | ✅ Available | $500 payment dated February 1, 2026 |
-| **Rental Assistance Approval Letter** | ✅ Available | PA Rental Assistance Program; approved $3,450 (3 months) |
-| **Medical Leave Documentation** | ✅ Available | FMLA paperwork; expected return: June 2026 |
-| **Employment Verification** | ✅ Available | Letter from employer confirming 3+ years employment |
-| **Proof of Income (Pre-Leave)** | ✅ Available | Pay stubs from November-December 2025 |
-| **School Enrollment Records** | ✅ Available | Children enrolled at Pittsburgh Miller Elementary |
-| **Landlord Contact Attempts** | ❌ Not Available | Only verbal; no emails or letters |
-| **Current Income Documentation** | ❌ Not Available | Currently no income during leave |
+## 👤 CLIENT OVERVIEW
+* **Name:** Maria Garcia  
+* **Location:** Allegheny County, PA (Shadyside)  
+* **Household:** Single parent, 2 minor children (ages 8, 11)  
+* **Current Housing Status:** Received 10-Day Notice to Vacate  
+* **Monthly Rent:** $1,150  
+* **Employment:** Currently on unpaid medical leave (FMLA)  
 
 ---
 
-## QUESTIONS FOR LEGAL ADVISOR
-
-1. **What are my rights after receiving a 10-Day Notice in Pennsylvania?**
-2. **If rental assistance pays the full amount owed, can the eviction still proceed?**
-3. **What is the timeline from notice to court date in Allegheny County?**
-4. **Should I continue trying to contact the landlord directly?**
-5. **What happens if I lose the eviction case?**
-6. **Are there emergency protections for medical situations?**
-7. **What should I bring to court if this goes to a hearing?**
+## 📋 EXECUTIVE SUMMARY
+> Client is a long-term tenant (18+ months) with no prior lease violations, currently facing eviction due to non-payment stemming from an unexpected medical emergency. Client has already applied for and been approved for Pennsylvania Rental Assistance, but the payment is currently pending disbursement to the landlord. Client has attempted to communicate with the landlord regarding a payment plan but has only left voicemails. 
 
 ---
 
-## PITTSBURGH RESOURCES & REFERRALS
+## 📅 CHRONOLOGICAL TIMELINE
 
-**1. Neighborhood Legal Services Association (NLSA)**  
-Intake Hotline: (412) 255-6700 | www.nlsa-law.org  
-Intake Hours: Monday-Thursday, 9:00 AM - 12:00 PM
-
-**2. Pennsylvania Housing Finance Agency - Rental Assistance**  
-Phone: (866) 857-4734 | www.phfa.org/renters/rental-assistance
-
-**3. Community Human Services (CHS)**  
-Phone: (412) 421-5050 | www.chspgh.org  
-HUD-approved housing counselor available
-
-**4. Pittsburgh Tenants Union**  
-Phone: (412) 586-9783 | www.pittsburghtenantsunion.org  
-Free membership; monthly meetings
+* **June 2024:** Signed 12-month lease for 2-bedroom apartment.
+* **December 2025:** Diagnosed with serious medical condition requiring surgery.
+* **January 2026:** Began unpaid medical leave; exhausted all sick days.
+* **February 1, 2026:** Paid partial rent ($500 of $1,150) due to financial hardship.
+* **February 15, 2026:** Submitted application to PA Rental Assistance Program.
+* **March 1, 2026:** Received 10-Day Notice to Vacate for non-payment.
+* **March 3, 2026:** Attempted to contact landlord to discuss payment plan (no written response).
+* **March 5, 2026:** Received approval letter for rental assistance ($3,450 approved for 3 months; pending landlord payout).
 
 ---
 
-## IMPORTANT DISCLAIMERS
+## 📁 DOCUMENT CHECKLIST
 
-⚠️ **This is a demonstration packet created for CaseReady pilot recruitment.**  
-- This case is **fictional** and for demonstration purposes only
-- Maria Garcia is not a real person
-- This packet demonstrates the **format and organization** CaseReady provides
+**Documents Provided by Client:**
+- [x] **Lease Agreement** *(Signed June 15, 2024; expires May 31, 2027)*
+- [x] **10-Day Notice to Vacate** *(Dated March 1, 2026)*
+- [x] **Bank Statements** *(January–February 2026)*
+- [x] **Partial Rent Payment Receipt** *($500, dated Feb 1, 2026)*
+- [x] **Rental Assistance Approval Letter** *(PA PHFA)*
+- [x] **Medical Leave Documentation** *(FMLA paperwork, expected return: June 2026)*
+- [x] **Employment Verification** *(Letter confirming 3+ years of employment)*
 
-⚠️ **CaseReady is NOT a law firm and does NOT provide legal advice.**  
-- We are an organizational tool to help you prepare for professional consultations
-- Using CaseReady does NOT create an attorney-client relationship
-- You should consult with a licensed Pennsylvania attorney for legal advice
+**Documents Missing or Needed:**
+- [ ] **Written Landlord Communication** *(Client has only made phone calls)*
+- [ ] **Current Income Documentation** *(N/A due to unpaid leave)*
+- [ ] **Character References** *(Optional: employer or neighbor)*
 
 ---
 
-**Packet Generated by CaseReady**  
-Turn scattered facts into a useful first-conversation packet  
-https://dacolescocoai.com | pilot@dacolescocoai.com
+## ❓ CLIENT'S TOP QUESTIONS FOR COUNSEL
 
-© 2026 CaseReady | Not legal advice | For demonstration purposes only
+1. What are my immediate rights after receiving a 10-Day Notice in Pennsylvania?
+2. If the rental assistance pays the full amount owed, can the eviction process still proceed?
+3. What is the typical timeline from notice to a court date in Allegheny County?
+4. Should I continue attempting to contact the landlord directly, and if so, how?
+5. Are there emergency protections or reasonable accommodations available under the ADA/Fair Housing Act for my medical situation?
+
+---
+
+## 🏛️ RECOMMENDED LOCAL RESOURCES
+
+**Primary Legal Support:**  
+**Neighborhood Legal Services Association (NLSA)**  
+📞 (412) 255-6700 | 🌐 www.nlsa-law.org  
+*Intake Hours: Mon–Thu, 9:00 AM – 12:00 PM*
+
+**Financial & Housing Support:**  
+**PA Housing Finance Agency (Rental Assistance)**  
+📞 (866) 857-4734 | 🌐 www.phfa.org/renters/rental-assistance  
+*Status: Application approved, awaiting disbursement.*
+
+**Community Human Services (CHS)**  
+📞 (412) 421-5050 | 🌐 www.chspgh.org  
+*HUD-approved housing counseling and eviction prevention.*
+
+---
+
+## ⚖️ IMPORTANT DISCLAIMERS
+
+* **Demonstration Only:** This is a fictional case created to demonstrate the organizational format provided by CaseReady. Maria Garcia is not a real person.
+* **Not Legal Advice:** CaseReady is an organizational and educational tool, not a law firm. We do not provide legal advice, strategy, or representation. Using this tool does not create an attorney-client relationship. 
+* **Urgent Matters:** If you have an active court date or emergency deadline, please contact Neighborhood Legal Services or a licensed Pennsylvania attorney immediately.
+
+---
+*Generated by CaseReady | Turn scattered facts into a useful first-conversation packet.*  
+*https://dacolescocoai.com | pilot@dacolescocoai.com*
