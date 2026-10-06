@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Buddy | Stop Fighting the System Alone</title>
+    <meta name="description" content="Advocate Buddy is the all-in-one platform that automates busywork, organizes evidence, and helps advocates win. Join our exclusive nonprofit pilot program.">
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary: #1e3a8a;    /* Deep Trust Blue */
+            --accent: #f97316;     /* High-Vis Action Orange */
+            --accent-hover: #ea580c;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --white: #ffffff;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--dark); background: var(--white); }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+
+        /* --- UTILITIES --- */
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        .btn { display: inline-block; padding: 16px 32px; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease; text-align: center; cursor: pointer; border: none; }
+        .btn-primary { background: var(--accent); color: var(--white); box-shadow: var(--shadow); }
+        .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: var(--white); border: 2px solid var(--white); }
+        .btn-secondary:hover { background: var(--white); color: var(--primary); }
+        .text-center { text-align: center; }
+        .section { padding: 80px 0; }
+
+        /* --- HEADER --- */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 30px; align-items: center; }
+        .nav-links a { font-weight: 600; color: var(--dark); transition: color 0.2s; }
+        .nav-links a:hover { color: var(--accent); }
+        .nav-links .btn { padding: 10px 20px; font-size: 0.95rem; }
+
+        /* --- HERO --- */
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%); color: var(--white); padding: 100px 0; text-align: center; }
+        .hero-pre { text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 15px; opacity: 0.9; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+        .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 40px; opacity: 0.95; }
+        .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .trust-indicator { margin-top: 40px; font-size: 0.95rem; opacity: 0.8; }
+
+        /* --- PROBLEM SECTION --- */
+        .problem { background: #f1f5f9; }
+        .problem h2, .solution h2, .features h2, .how-it-works h2, .pilot h2, .final-cta h2 { 
+            font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 20px; color: var(--dark); 
+        }
+        .problem .subtitle { text-align: center; font-size: 1.2rem; color: var(--gray); max-width: 700px; margin: 0 auto 50px; }
+        .pain-points { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .pain-card { background: var(--white); padding: 30px; border-radius: 12px; box-shadow: var(--shadow); border-left: 5px solid #ef4444; }
+        .pain-card h3 { color: #ef4444; margin-bottom: 10px; font-size: 1.25rem; }
+
+        /* --- FEATURES --- */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 50px; }
+        .feature-card { text-align: center; padding: 20px; }
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; }
+        .feature-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+        .feature-card p { color: var(--gray); }
+
+        /* --- HOW IT WORKS --- */
+        .how-it-works { background: var(--light); }
+        .steps { display: flex; justify-content: space-between; gap: 30px; margin-top: 50px; flex-wrap: wrap; }
+        .step { flex: 1; text-align: center; min-width: 200px; }
+        .step-number { width: 60px; height: 60px; background: var(--primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 20px; }
+
+        /* --- PILOT PROGRAM --- */
+        .pilot { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: var(--white); }
+        .pilot h2 { color: var(--white); }
+        .pilot .subtitle { color: #cbd5e1; font-size: 1.2rem; text-align: center; max-width: 700px; margin: 0 auto 40px; }
+        .pilot-box { background: rgba(255,255,255,0.05); border: 2px solid var(--accent); border-radius: 16px; padding: 40px; max-width: 800px; margin: 0 auto; text-align: center; backdrop-filter: blur(10px); }
+        .pilot-box h3 { font-size: 1.8rem; margin-bottom: 20px; color: var(--accent); }
+        .pilot-perks { display: flex; justify-content: center; gap: 40px; margin: 30px 0; flex-wrap: wrap; text-align: left; }
+        .perk { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; }
+        .perk-icon { color: #22c55e; font-size: 1.5rem; }
+        
+        /* Typeform Embed Container */
+        .typeform-container {
+            width: 100%;
+            height: 600px;
+            margin-top: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--white);
+        }
+        .form-micro { text-align: center; margin-top: 20px; font-size: 0.9rem; color: #94a3b8; }
+
+        /* --- FINAL CTA --- */
+        .final-cta { background: var(--accent); color: var(--white); text-align: center; }
+        .final-cta h2 { color: var(--white); }
+        .final-cta p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; }
+        .final-cta .btn { background: var(--white); color: var(--accent); }
+        .final-cta .btn:hover { background: var(--light); }
+
+        /* --- FOOTER --- */
+        footer { background: var(--dark); color: #94a3b8; padding: 50px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-brand h3 { color: var(--white); font-size: 1.5rem; margin-bottom: 10px; }
+        .footer-links h4 { color: var(--white); margin-bottom: 15px; }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 10px; }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-bottom { border-top: 1px solid #334155; padding-top: 20px; text-align: center; font-size: 0.9rem; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; } 
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .pilot-perks { flex-direction: column; align-items: center; }
+            .steps { flex-direction: column; }
+            .typeform-container { height: 700px; } /* Taller on mobile for better scrolling */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Advocate<span>Buddy</span></a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#pilot">Pilot Program</a>
+                    <a href="#pilot" class="btn btn-primary">Apply Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <p class="hero-pre">For Professional & Family Advocates</p>
+            <h1>Stop Fighting the System Alone.<br>Start Winning with Advocate Buddy.</h1>
+            <p>You fight for others; we fight for you. Advocate Buddy is the all-in-one platform that automates the busywork, organizes your evidence, and gives you the edge you need to get results.</p>
+            <div class="hero-buttons">
+                <a href="#pilot" class="btn btn-primary">Claim Your Free Account</a>
+                <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+            </div>
+            <p class="trust-indicator">⭐⭐⭐⭐⭐ Trusted by advocates across Healthcare, Education, and Legal sectors.</p>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="section problem">
+        <div class="container">
+            <h2>Advocacy is Hard. The Paperwork Shouldn't Be.</h2>
+            <p class="subtitle">You didn’t become an advocate to do data entry. But right now, you’re probably drowning in documents, missing critical deadlines, and feeling outgunned by massive bureaucracies. The system relies on red tape to make you give up. Don't let them.</p>
+            <div class="pain-points">
+                <div class="pain-card">
+                    <h3>❌ Drowning in Documents?</h3>
+                    <p>Losing crucial evidence in endless email threads, messy folders, and disorganized physical files.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>❌ Burned Out by Drafting?</h3>
+                    <p>Spending hours writing appeal letters from scratch, staring at a blank page, wondering if you said it right.</p>
+                </div>
+                <div class="pain-card">
+                    <h3>❌ Missing Deadlines?</h3>
+                    <p>Bureaucracies win when you miss a filing date by even one day. Tracking statutes of limitations is a nightmare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="section features" id="features">
+        <div class="container">
+            <h2>The Unfair Advantage Your Cases Deserve</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Bulletproof Case Organization</h3>
+                    <p>Upload your files, and let Buddy automatically sort them into airtight, chronological timelines. Build a compelling narrative in minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>AI-Powered Appeal Drafting</h3>
+                    <p>Use battle-tested templates and AI to draft persuasive appeal letters. You add the human touch; we do the heavy lifting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚨</div>
+                    <h3>Zero-Miss Deadline Tracker</h3>
+                    <p>Our smart calendar tracks every filing window and follow-up date, sending automated alerts so you're always one step ahead.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Fort-Knox Security</h3>
+                    <p>Built with enterprise-grade encryption. Your clients' secrets and sensitive case data are 100% safe with us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>From Overwhelmed to Organized in 3 Steps</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Drop Your Details</h3>
+                    <p>Upload your case files, notes, and correspondence into your secure Buddy dashboard.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Let Buddy Work</h3>
+                    <p>Our smart tools organize your timeline, flag missing info, and draft your core documents.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Review & WIN</h3>
+                    <p>Polish the drafts, hit send, and watch your success rate skyrocket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILOT PROGRAM SECTION -->
+    <section class="section pilot" id="pilot">
+        <div class="container">
+            <h2>Exclusive Founding Pilot Program</h2>
+            <p class="subtitle">We are looking for exactly <strong>5 nonprofit organizations</strong> to partner with us before our public launch. Help us build the ultimate advocacy tool, and we'll help you fight for your mission.</p>
+            
+            <div class="pilot-box">
+                <h3>Get Advocate Buddy FREE. FOR LIFE.</h3>
+                <p>If selected, your organization will receive full, unlimited access to Advocate Buddy forever. No subscriptions, no hidden fees, ever.</p>
+                
+                <div class="pilot-perks">
+                    <div class="perk"><span class="perk-icon">✅</span> Zero Cost Forever</div>
+                    <div class="perk"><span class="perk-icon">✅</span> Shape the Future</div>
+                    <div class="perk"><span class="perk-icon">✅</span> White-Glove Support</div>
+                </div>
+
+                <p style="margin-bottom: 20px; color: #cbd5e1;"><strong>The Exchange:</strong> In exchange for lifetime access, we ask for your honest evaluation, feedback, and recommendations to refine the platform.</p>
+
+                <!-- TYPEFORM EMBED -->
+                <div class="typeform-container">
+                    <iframe 
+                        src="https://form.typeform.com/to/QpIxlM7O" 
+                        style="width: 100%; height: 100%; border: none;" 
+                        allow="camera; microphone; autoplay; encrypted-media; fullscreen; geolocation" 
+                        loading="lazy"
+                        title="Advocate Buddy Pilot Application">
+                    </iframe>
+                </div>
+                <p class="form-micro">Only 5 spots available. Applications close when they are filled.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="section final-cta">
+        <div class="container">
+            <h2>Ready to Tip the Scales in Your Favor?</h2>
+            <p>Stop letting red tape win. Join the advocates who are working smarter, not harder. Take the first step toward stress-free, high-impact advocacy today.</p>
+            <a href="#pilot" class="btn">Claim Your Free Account</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Advocate Buddy</h3>
+                    <p>Empowering advocates to win the fight. Work less. Stress less. Win more.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How it Works</a></li>
+                        <li><a href="#pilot">Pilot Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="https://advocatebuddy.org">advocatebuddy.org</a></li>
+                        <li><a href="mailto:info@advocatebuddy.org">info@advocatebuddy.org</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Advocate Buddy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
