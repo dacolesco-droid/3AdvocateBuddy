@@ -84,7 +84,7 @@
         .perk { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; }
         .perk-icon { color: #22c55e; font-size: 1.5rem; }
         
-        /* Typeform Embed Container */
+        /* Legacy Typeform container (no longer used) */
         .typeform-container {
             width: 100%;
             height: 600px;
@@ -112,6 +112,88 @@
         .footer-links a:hover { color: var(--accent); }
         .footer-bottom { border-top: 1px solid #334155; padding-top: 20px; text-align: center; font-size: 0.9rem; }
 
+
+        /* --- GUIDED TOUR --- */
+        .tour { background: var(--white); }
+        .tour h2 { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 16px; color: var(--dark); }
+        .tour .subtitle { text-align: center; font-size: 1.2rem; color: var(--gray); max-width: 680px; margin: 0 auto 48px; }
+        .tour-wrap { display: grid; grid-template-columns: 280px 1fr; gap: 36px; align-items: start; }
+        .tour-steps { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+        .tour-step-btn { width: 100%; display: flex; gap: 14px; align-items: center; text-align: left; background: transparent; border: 1px solid transparent; border-radius: 10px; padding: 12px 14px; font: inherit; color: var(--gray); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+        .tour-step-btn:hover { background: #f1f5f9; color: var(--dark); }
+        .tour-step-btn[aria-current="step"] { background: #eff6ff; border-color: #bfdbfe; color: var(--primary); font-weight: 700; }
+        .tour-step-num { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-size: .85rem; font-weight: 800; background: #e2e8f0; color: var(--dark); font-variant-numeric: tabular-nums; }
+        .tour-step-btn[aria-current="step"] .tour-step-num { background: var(--primary); color: var(--white); }
+        .tour-step-btn.done .tour-step-num { background: #dbeafe; color: var(--primary); }
+        .tour-stage { min-width: 0; }
+        .tour-frame { border-radius: 12px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(15,23,42,.25); border: 1px solid #e2e8f0; background: #f8fafc; }
+        .tour-bar { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0; }
+        .tour-dot { width: 10px; height: 10px; border-radius: 50%; background: #cbd5e1; }
+        .tour-url { margin-left: 10px; flex: 1; font-size: .8rem; color: var(--gray); background: var(--white); border-radius: 6px; padding: 4px 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .tour-sample { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #9a3412; background: #ffedd5; border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+        .tour-screen { position: relative; aspect-ratio: 16 / 10; background: #f8fafc; }
+        .tour-screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top left; opacity: 0; transition: opacity .35s ease; }
+        .tour-screen img.active { opacity: 1; }
+        .tour-spot { position: absolute; border: 3px solid var(--accent); border-radius: 10px; box-shadow: 0 0 0 9999px rgba(15,23,42,.38); transition: all .45s cubic-bezier(.2,.8,.2,1); pointer-events: none; }
+        .tour-caption { margin-top: 22px; display: flex; gap: 24px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+        .tour-caption-text { flex: 1 1 360px; }
+        .tour-kicker { font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; font-variant-numeric: tabular-nums; }
+        .tour-caption h3 { font-size: 1.4rem; line-height: 1.3; margin-bottom: 6px; color: var(--dark); }
+        .tour-caption p { color: var(--gray); max-width: 60ch; }
+        .tour-nav { display: flex; gap: 10px; flex: none; }
+        .tour-nav .btn { padding: 12px 22px; font-size: 1rem; }
+        .btn-ghost { background: var(--white); color: var(--dark); border: 1px solid #cbd5e1; }
+        .btn-ghost:hover { background: #f1f5f9; }
+        .btn-ghost:disabled { opacity: .45; cursor: not-allowed; }
+        .tour-note { margin-top: 18px; font-size: .9rem; color: var(--gray); }
+        .btn:focus-visible, .tour-step-btn:focus-visible, .wl-chip input:focus-visible + span { outline: 3px solid #93c5fd; outline-offset: 2px; }
+
+        /* --- WAITLIST FORM --- */
+        .wl-form { margin-top: 30px; background: var(--white); color: var(--dark); border-radius: 12px; padding: 32px; text-align: left; }
+        .wl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+        .wl-field { display: flex; flex-direction: column; gap: 6px; }
+        .wl-field.full { grid-column: 1 / -1; }
+        .wl-field label, .wl-legend { font-weight: 700; font-size: .95rem; }
+        .wl-field .opt { font-weight: 400; color: var(--gray); }
+        .wl-field input, .wl-field select, .wl-field textarea { font: inherit; font-size: 1rem; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; color: var(--dark); width: 100%; }
+        .wl-field input:focus, .wl-field select:focus, .wl-field textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(30,58,138,.15); background: var(--white); }
+        .wl-field textarea { min-height: 96px; resize: vertical; }
+        .wl-chips { display: flex; flex-wrap: wrap; gap: 8px; border: none; }
+        .wl-chip { position: relative; }
+        .wl-chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+        .wl-chip span { display: inline-block; padding: 8px 14px; border: 1px solid #cbd5e1; border-radius: 999px; font-size: .92rem; cursor: pointer; background: #f8fafc; transition: all .15s; }
+        .wl-chip input:checked + span { background: var(--primary); border-color: var(--primary); color: var(--white); }
+        .wl-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+        .wl-actions { margin-top: 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .wl-actions .btn { padding: 14px 28px; }
+        .wl-actions .btn:disabled { opacity: .7; cursor: progress; transform: none; }
+        .wl-privacy { font-size: .85rem; color: var(--gray); flex: 1 1 240px; }
+        .wl-msg { margin-top: 16px; padding: 12px 14px; border-radius: 8px; font-size: .95rem; display: none; }
+        .wl-msg.err { display: block; background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+        .wl-done { display: none; text-align: center; padding: 24px 8px; }
+        .wl-done h4 { font-size: 1.5rem; margin-bottom: 8px; color: var(--primary); }
+        .wl-done p { color: var(--gray); max-width: 46ch; margin: 0 auto; }
+        .wl-signin { margin-top: 18px; font-size: .95rem; color: #cbd5e1; }
+        .wl-signin a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+
+        @media (max-width: 900px) {
+            .tour-wrap { grid-template-columns: 1fr; gap: 20px; }
+            .tour-steps { flex-direction: row; overflow-x: auto; gap: 8px; padding-bottom: 6px; scrollbar-width: thin; }
+            .tour-steps li { flex: none; }
+            .tour-step-btn { padding: 8px 12px; white-space: nowrap; }
+        }
+        @media (max-width: 768px) {
+            .tour h2 { font-size: 2rem; }
+            .tour-step-label { display: none; }
+            .tour-step-btn[aria-current="step"] .tour-step-label { display: inline; }
+            .tour-url { display: none; }
+            .tour-nav { width: 100%; }
+            .tour-nav .btn { flex: 1; }
+            .wl-grid { grid-template-columns: 1fr; }
+            .wl-form { padding: 22px; }
+        }
+        @media (prefers-reduced-motion: reduce) { .tour-screen img, .tour-spot { transition: none; } }
+
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
@@ -132,6 +214,7 @@
                 <a href="#" class="logo">Advocate<span>Buddy</span></a>
                 <div class="nav-links">
                     <a href="#features">Features</a>
+                    <a href="#tour">Take the Tour</a>
                     <a href="#how-it-works">How it Works</a>
                     <a href="#pilot">Pilot Program</a>
                     <a href="#pilot" class="btn btn-primary">Apply Now</a>
@@ -148,7 +231,7 @@
             <p>You fight for others; we fight for you. Advocate Buddy is the all-in-one platform that automates the busywork, organizes your evidence, and gives you the edge you need to get results.</p>
             <div class="hero-buttons">
                 <a href="#pilot" class="btn btn-primary">Claim Your Free Account</a>
-                <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+                <a href="#tour" class="btn btn-secondary">Take the 2-Minute Tour</a>
             </div>
             <p class="trust-indicator">⭐⭐⭐⭐⭐ Trusted by advocates across Healthcare, Education, and Legal sectors.</p>
         </div>
@@ -205,6 +288,40 @@
         </div>
     </section>
 
+
+    <!-- GUIDED TOUR SECTION -->
+    <section class="section tour" id="tour" aria-labelledby="tour-title">
+        <div class="container">
+            <h2 id="tour-title">See Advocate Buddy in Action</h2>
+            <p class="subtitle">Follow a tenant fighting for a $2,400 security deposit, from the first question to a letter that's ready to send. These are real screens from the app, filled with a made-up sample case.</p>
+            <div class="tour-wrap">
+                <ol class="tour-steps" id="tour-steps" aria-label="Tour steps"></ol>
+                <div class="tour-stage">
+                    <div class="tour-frame">
+                        <div class="tour-bar" aria-hidden="true">
+                            <span class="tour-dot"></span><span class="tour-dot"></span><span class="tour-dot"></span>
+                            <span class="tour-url">advocatebuddy.pplx.app</span>
+                            <span class="tour-sample">Sample case</span>
+                        </div>
+                        <div class="tour-screen" id="tour-screen"><div class="tour-spot" id="tour-spot" aria-hidden="true"></div></div>
+                    </div>
+                    <div class="tour-caption">
+                        <div class="tour-caption-text" aria-live="polite">
+                            <p class="tour-kicker" id="tour-kicker">Step 1 of 8</p>
+                            <h3 id="tour-heading"></h3>
+                            <p id="tour-body"></p>
+                        </div>
+                        <div class="tour-nav">
+                            <button type="button" class="btn btn-ghost" id="tour-prev">Back</button>
+                            <button type="button" class="btn btn-primary" id="tour-next">Next</button>
+                        </div>
+                    </div>
+                    <p class="tour-note">Advocate Buddy provides legal information, not legal advice, and is not a law firm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- HOW IT WORKS SECTION -->
     <section class="section how-it-works" id="how-it-works">
         <div class="container">
@@ -247,17 +364,51 @@
 
                 <p style="margin-bottom: 20px; color: #cbd5e1;"><strong>The Exchange:</strong> In exchange for lifetime access, we ask for your honest evaluation, feedback, and recommendations to refine the platform.</p>
 
-                <!-- TYPEFORM EMBED -->
-                <div class="typeform-container">
-                    <iframe 
-                        src="https://form.typeform.com/to/QpIxlM7O" 
-                        style="width: 100%; height: 100%; border: none;" 
-                        allow="camera; microphone; autoplay; encrypted-media; fullscreen; geolocation" 
-                        loading="lazy"
-                        title="Advocate Buddy Pilot Application">
-                    </iframe>
+                <!-- PILOT WAITLIST FORM (saves to Advocate Buddy's Supabase database) -->
+                <form class="wl-form" id="wl-form" novalidate>
+                    <div class="wl-grid">
+                        <div class="wl-field"><label for="wl-name">Your name</label><input id="wl-name" name="name" autocomplete="name" required maxlength="120"></div>
+                        <div class="wl-field"><label for="wl-email">Work email</label><input id="wl-email" name="email" type="email" autocomplete="email" required maxlength="200"></div>
+                        <div class="wl-field"><label for="wl-org">Organization <span class="opt">(optional)</span></label><input id="wl-org" name="organization" autocomplete="organization" maxlength="200"></div>
+                        <div class="wl-field"><label for="wl-role">Your role <span class="opt">(optional)</span></label>
+                            <select id="wl-role" name="role">
+                                <option value="">Choose one</option>
+                                <option>Legal aid attorney</option>
+                                <option>Paralegal or advocate</option>
+                                <option>Law school clinic</option>
+                                <option>Housing justice organization</option>
+                                <option>Re-entry program</option>
+                                <option>Representing myself</option>
+                                <option>Other</option>
+                            </select></div>
+                        <div class="wl-field full"><label for="wl-loc">City and state <span class="opt">(optional)</span></label><input id="wl-loc" name="location" autocomplete="address-level2" maxlength="120" placeholder="e.g. Pittsburgh, PA"></div>
+                        <fieldset class="wl-field full" style="border:none">
+                            <legend class="wl-legend">What kinds of cases do you handle? <span class="opt">(optional)</span></legend>
+                            <div class="wl-chips" style="margin-top:8px">
+                                <label class="wl-chip"><input type="checkbox" name="case_types" value="Security deposits"><span>Security deposits</span></label>
+                                <label class="wl-chip"><input type="checkbox" name="case_types" value="Evictions and repairs"><span>Evictions and repairs</span></label>
+                                <label class="wl-chip"><input type="checkbox" name="case_types" value="Unpaid wages"><span>Unpaid wages</span></label>
+                                <label class="wl-chip"><input type="checkbox" name="case_types" value="Benefits denials"><span>Benefits denials</span></label>
+                                <label class="wl-chip"><input type="checkbox" name="case_types" value="Consumer and debt"><span>Consumer and debt</span></label>
+                                <label class="wl-chip"><input type="checkbox" name="case_types" value="Small claims"><span>Small claims</span></label>
+                                <label class="wl-chip"><input type="checkbox" name="case_types" value="Re-entry"><span>Re-entry</span></label>
+                            </div>
+                        </fieldset>
+                        <div class="wl-field full"><label for="wl-msg">Anything else we should know? <span class="opt">(optional)</span></label><textarea id="wl-msg" name="message" maxlength="2000" placeholder="Caseload, the problems you'd most like help with, best time to reach you"></textarea></div>
+                        <div class="wl-hp" aria-hidden="true"><label for="wl-website">Website</label><input id="wl-website" name="website" tabindex="-1" autocomplete="off"></div>
+                    </div>
+                    <div class="wl-actions">
+                        <button type="submit" class="btn btn-primary" id="wl-submit">Request a Pilot Invite</button>
+                        <p class="wl-privacy">We only use your details to review your request and contact you about the pilot. Please don't include client information.</p>
+                    </div>
+                    <div class="wl-msg" id="wl-error" role="alert"></div>
+                </form>
+                <div class="wl-form wl-done" id="wl-done" tabindex="-1">
+                    <h4>Request received.</h4>
+                    <p>Thank you. David will review your request and email you an invite code if there's a good fit for the pilot.</p>
                 </div>
                 <p class="form-micro">Only 5 spots available. Applications close when they are filled.</p>
+                <p class="wl-signin">Already have an invite code? <a href="https://advocatebuddy.pplx.app">Create your account or sign in</a>.</p>
             </div>
         </div>
     </section>
@@ -300,6 +451,84 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+    (function () {
+        var STEPS = [
+            { img: "01-dashboard", label: "Your cases", title: "Every case and deadline in one place", body: "Your dashboard shows each case, the amount at stake and which stage it's in. Upcoming deadlines are pulled together so nothing slips.", spot: [72.5, 16, 25.5, 33] },
+            { img: "02-intake", label: "Tell your story", title: "A guided intake in plain language", body: "Answer a few simple questions about what happened. No legal jargon, and no blank page to stare at.", spot: [36, 18.5, 48.5, 18] },
+            { img: "03-overview", label: "Where you stand", title: "Know where you stand", body: "See possible claims, where to file and the state's small-claims limit, with each rule linked to an official source.", spot: [23.5, 31, 46.5, 28] },
+            { img: "04-timeline", label: "Timeline", title: "Build a clean timeline of events", body: "Keep what happened, and when, in order. A clear timeline is often the strongest part of a case.", spot: [23.5, 31, 47, 68] },
+            { img: "05-evidence", label: "Evidence", title: "A checklist of the proof you need", body: "Know which documents, messages and photos to gather, and check them off as you collect them.", spot: [23.5, 29.5, 47, 69] },
+            { img: "06-deadlines", label: "Deadlines", title: "Never miss a filing window", body: "Track response dates and filing deadlines for each case, with the due date front and center.", spot: [23.5, 30.5, 47, 30] },
+            { img: "07-documents", label: "Letters and filings", title: "Letters that are ready to send", body: "Start a demand letter, appeal or statement of claim from your case details, then edit, copy, download or print it.", spot: [48.5, 29.5, 49, 69] },
+            { img: "08-help", label: "Free legal help", title: "Know when to call a lawyer", body: "Find free legal aid, see the warning signs that mean you need a lawyer, and compare small-claims limits in each pilot state.", spot: [27, 66, 66, 33] }
+        ];
+        var stepsEl = document.getElementById("tour-steps"), screen = document.getElementById("tour-screen"), spot = document.getElementById("tour-spot");
+        var kicker = document.getElementById("tour-kicker"), heading = document.getElementById("tour-heading"), body = document.getElementById("tour-body");
+        var prev = document.getElementById("tour-prev"), next = document.getElementById("tour-next");
+        if (!stepsEl) return;
+        var cur = 0, imgs = [], btns = [];
+        STEPS.forEach(function (s, i) {
+            var img = new Image(); img.src = "tour/" + s.img + ".webp"; img.alt = "Advocate Buddy screen: " + s.title; img.decoding = "async";
+            if (i > 1) img.loading = "lazy";
+            screen.insertBefore(img, spot); imgs.push(img);
+            var li = document.createElement("li"), b = document.createElement("button");
+            b.type = "button"; b.className = "tour-step-btn";
+            b.innerHTML = '<span class="tour-step-num">' + (i + 1) + '</span><span class="tour-step-label">' + s.label + '</span>';
+            b.setAttribute("aria-label", "Step " + (i + 1) + ": " + s.label);
+            b.addEventListener("click", function () { go(i); });
+            li.appendChild(b); stepsEl.appendChild(li); btns.push(b);
+        });
+        function go(i) {
+            cur = Math.max(0, Math.min(STEPS.length - 1, i));
+            var s = STEPS[cur];
+            imgs.forEach(function (im, k) { im.classList.toggle("active", k === cur); if (k === cur) im.loading = "eager"; });
+            btns.forEach(function (b, k) { if (k === cur) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current"); b.classList.toggle("done", k < cur); });
+            spot.style.left = s.spot[0] + "%"; spot.style.top = s.spot[1] + "%"; spot.style.width = s.spot[2] + "%"; spot.style.height = Math.min(s.spot[3], 100 - s.spot[1] - 1) + "%";
+            kicker.textContent = "Step " + (cur + 1) + " of " + STEPS.length;
+            heading.textContent = s.title; body.textContent = s.body;
+            prev.disabled = cur === 0;
+            next.textContent = cur === STEPS.length - 1 ? "Request a Pilot Invite" : "Next";
+            var active = btns[cur]; if (active && active.scrollIntoView && window.innerWidth <= 900) active.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+        }
+        prev.addEventListener("click", function () { go(cur - 1); });
+        next.addEventListener("click", function () { if (cur === STEPS.length - 1) { document.getElementById("pilot").scrollIntoView({ behavior: "smooth" }); setTimeout(function () { var n = document.getElementById("wl-name"); if (n) n.focus({ preventScroll: true }); }, 600); } else go(cur + 1); });
+        document.getElementById("tour").addEventListener("keydown", function (e) { if (e.target.closest("input,textarea,select")) return; if (e.key === "ArrowRight") { go(cur + 1); e.preventDefault(); } if (e.key === "ArrowLeft") { go(cur - 1); e.preventDefault(); } });
+        go(0);
+    })();
+
+    (function () {
+        var SUPABASE_URL = "https://ybimtklaqyijwajzyfys.supabase.co";
+        var PUBLISHABLE_KEY = "sb_publishable_jSFbR-rXEVx3njTByR-e3w_HCPAtmEw"; // public, insert-only via join_waitlist
+        var form = document.getElementById("wl-form"); if (!form) return;
+        var btn = document.getElementById("wl-submit"), err = document.getElementById("wl-error"), done = document.getElementById("wl-done");
+        function showErr(m) { err.textContent = m; err.className = "wl-msg err"; }
+        form.addEventListener("input", function () { err.className = "wl-msg"; });
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); err.className = "wl-msg";
+            var f = form.elements;
+            if (f.website.value) { form.style.display = "none"; done.style.display = "block"; return; }
+            var name = f.name.value.trim(), email = f.email.value.trim();
+            if (name.length < 2) { showErr("Please enter your name."); f.name.focus(); return; }
+            if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { showErr("Please enter a valid email address."); f.email.focus(); return; }
+            var types = Array.prototype.slice.call(form.querySelectorAll('input[name="case_types"]:checked')).map(function (c) { return c.value; }).join(", ");
+            btn.disabled = true; btn.textContent = "Sending...";
+            fetch(SUPABASE_URL + "/rest/v1/rpc/join_waitlist", {
+                method: "POST",
+                headers: { "Content-Type": "application/json", apikey: PUBLISHABLE_KEY },
+                body: JSON.stringify({ p_name: name, p_email: email, p_organization: f.organization.value.trim(), p_role: f.role.value, p_location: f.location.value.trim(), p_case_types: types, p_message: f.message.value.trim() })
+            }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+              .then(function (res) {
+                if (res.ok && res.d && res.d.ok) { form.style.display = "none"; done.style.display = "block"; done.focus(); }
+                else showErr((res.d && (res.d.error || res.d.message)) || "Something went wrong. Please try again.");
+              })
+              .catch(function () { showErr("We couldn't send your request. Check your connection and try again."); })
+              .then(function () { btn.disabled = false; btn.textContent = "Request a Pilot Invite"; });
+        });
+    })();
+    </script>
 
 </body>
 </html>
